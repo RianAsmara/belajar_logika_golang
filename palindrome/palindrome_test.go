@@ -2,7 +2,7 @@ package polindrome
 
 import "testing"
 
-func TestPolindromNumber(t *testing.T) {
+func TestPalindromeNumber(t *testing.T) {
 	type args struct {
 		input string
 	}
@@ -41,11 +41,11 @@ func TestPolindromNumber(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			got, err := PolindromeNumber(tt.args.input)
 			if (err != nil) != tt.wantErr {
-				t.Errorf("PolindromNumber() error = %v, wantErr %v", err, tt.wantErr)
+				t.Errorf("PalindromeNumber() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
 			if got != tt.want {
-				t.Errorf("PolindromNumber() = %v, want %v", got, tt.want)
+				t.Errorf("PalindromeNumber() = %v, want %v", got, tt.want)
 			}
 		})
 	}
